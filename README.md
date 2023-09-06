@@ -1,4 +1,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is intended to be a quick demo showcasing how to validate ts-types at runtime, using ajv and ts-json-schema-generator. 
+You should only have to work with typescript-types, ajv and ts-json-schema-generator generates types for you. 
+The relevant files to look at are the following:
+- types.ts
+- types.validators.ts
+- generate-json-schema.js
+- app/page.tsx
+
+  The first three define the functions that are then used in the page-component to validate the input. The type of what you fetch from the example-api can then go from `unknown` to `Query`.
+  There are some build-problems that need to be solved to use this generally. 
+
+
 
 ## Getting Started
 
