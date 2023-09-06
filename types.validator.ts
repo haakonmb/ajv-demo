@@ -19,7 +19,7 @@ export type ValidateFunction<T> = ((data: unknown) => data is T) &
 
 export const isQuery = ajv.compile(QuerySchema) as ValidateFunction<Query>;
 
-export default function validate(value: unknown): Query {
+export default function validateQuery(value: unknown): Query {
   if (isQuery(value)) {
     return value;
   } else {
