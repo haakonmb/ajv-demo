@@ -1,4 +1,4 @@
-// main.js
+// original source: https://github.com/vega/ts-json-schema-generator
 
 const tsj = require('ts-json-schema-generator');
 const fs = require('fs');
